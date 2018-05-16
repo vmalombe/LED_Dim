@@ -35,4 +35,4 @@ except KeyboardInterrupt:
     white.stop()            # stop the white PWM output  
     red.stop()              # stop the red PWM output  
 finally:    
-GPIO.cleanup()          # clean up GPIO on CTRL+C exit  
+    GPIO.cleanup()          # clean up GPIO on CTRL+C exit  
