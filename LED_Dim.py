@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO # always needed with RPi.GPIO
 from time import sleep  # pull in the sleep function from time module  
       
 GPIO.setmode(GPIO.BCM)  # choose BCM or BOARD numbering schemes. I use BCM  
-      
+GPIO.setwarnings(False)      
 GPIO.setup(4, GPIO.OUT)# set GPIO 25 as output for white led  
 GPIO.setup(17, GPIO.OUT)# set GPIO 24 as output for red led  
       
