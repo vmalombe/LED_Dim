@@ -34,4 +34,5 @@ try:
 except KeyboardInterrupt:  
     white.stop()            # stop the white PWM output  
     red.stop()              # stop the red PWM output  
-    GPIO.cleanup()          # clean up GPIO on CTRL+C exit  
+finally:    
+GPIO.cleanup()          # clean up GPIO on CTRL+C exit  
